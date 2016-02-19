@@ -1,0 +1,350 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  /* iOS <= 4 i Android <= 2.3 */
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  box-sizing: border-box;
+  /* Chrome, Opera, Safari 5+ i IE 8+ */
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.float-fixed:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* App FONT */
+body {
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  color: #233249;
+}
+
+/* App FONT */
+h2 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 18px;
+  padding-bottom: 15px;
+  color: #8491A3;
+}
+
+.panel header h3 {
+  margin-bottom: 10px;
+}
+
+.main-container {
+  padding-top: 60px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.module-header {
+  padding-left: 25px;
+}
+
+.module-body {
+  margin-bottom: 80px;
+}
+.module-body footer {
+  text-align: right;
+  margin-top: 20px;
+}
+.module-body footer button {
+  margin-left: 7px;
+}
+
+.app-body {
+  padding: 15px;
+  padding: 1.5rem;
+}
+
+/* module_panel */
+.panel {
+  border-radius: 3px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+.panel header {
+  padding-top: 20px;
+}
+
+/* FileInput * IMAGE *  */
+input {
+  display: inline-block;
+  padding: 6.5px 8px;
+  margin: 0;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  height: auto;
+  white-space: nowrap;
+  text-transform: none;
+  color: #6c757f;
+  background-color: #fff;
+  color: #28292B;
+  width: 290px;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: none;
+  background-color: rgba(235, 235, 235, 0.4);
+  outline: none;
+}
+
+.img_container {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  /* image */
+}
+.img_container button {
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  width: 20px;
+  height: 20px;
+  background-color: #102C42;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 12px;
+  box-shadow: 0px 1px 2px -1px #000;
+}
+.img_container img {
+  max-width: 160px;
+}
+
+.small img {
+  max-width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 9999;
+}
+
+.load-image {
+  margin-top: 50px;
+}
+
+.load-image span[data-action="remove"]:after {
+  display: block;
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 9.5px 15px;
+  margin: 0;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 1;
+  height: auto;
+  white-space: nowrap;
+  text-transform: none;
+  color: #6c757f;
+  background-color: #fff;
+}
+
+.btn.classic:hover {
+  background-color: #F3F3F3;
+}
+
+.navy-blue {
+  background-color: #102c42;
+  color: white;
+  border: none;
+}
+
+.light-blue {
+  background-color: #5b6879;
+  opacity: 0.5;
+  border: none;
+}
+
+.light-blue:hover {
+  opacity: 1;
+}
+
+.file_button {
+  position: relative;
+}
+
+.file_button input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 32px;
+  filter: alpha(opacity=0);
+}
+
+.drop-zone {
+  position: relative;
+  margin: 20px 0;
+  border: 1px dotted #DCDCDC;
+  min-height: 120px;
+  border-radius: 2px;
+}
+.drop-zone .small {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0.6;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.info-message {
+  text-align: right;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+.info-message small {
+  font-style: italic;
+  color: #86909B;
+}
+
+.sub-menu-erase {
+  visibility: hidden;
+  -webkit-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* easeOutQuart */
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* easeOutQuart */
+}
+
+.sub-menu-erase.active {
+  visibility: visible;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px dotted #e9e9e9;
+}
+
+thead th {
+  font-weight: 400;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+thead tr th:first-child, tbody tr td:first-child {
+  width: 50px;
+  text-align: center;
+  padding: 7px;
+}
+
+tbody td:nth-of-type(5) a {
+  color: #B5B5B5;
+  font-weight: 100;
+}
+
+thead th:nth-of-type(2), tbody td:nth-of-type(2) {
+  text-align: center;
+}
+
+tbody td img {
+  max-height: 85px;
+  padding: 5px;
+  margin: 7px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+tr td.del {
+  text-align: center;
+  position: relative;
+}
+tr td.del .btn {
+  padding: 9.5px 7px;
+}
+tr td.del .sub-menu-erase {
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  line-height: 26px;
+  width: 78px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 #909090,0 0 0 1px #E0E0E0;
+}
+tr td.del .sub-menu-erase span {
+  padding: 8.5px 10px;
+  font-size: 12px;
+  border: 0;
+}
+
+.generate-row td {
+  vertical-align: middle;
+}
+
+.file-image-data {
+  position: relative;
+}
+.file-image-data img {
+  position: absolute;
+  top: 8px;
+  left: 33.333%;
+}
+
+/*# sourceMappingURL=style.css.map */
