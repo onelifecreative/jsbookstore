@@ -1,29 +1,16 @@
 {
-  "name": "CMS",
-  "version": "1.0.0",
-  "description": "HTML5 KickStart",
+  "name": "JavaScript "Free" BooksStore",
+  "version": "1.0.1",
+  "description": "Find your farourite book:Become a creative web developer learn JavaScript for free.",
   "main": "gruntfile.js",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autowatch": "^0.1.4",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-jade": "^0.15",
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-watch": "^0.5.3"
-  },
+  "author": "Lukasz Schab http://onelife.co/bookstore"
+  "keywords":["JavaScript","Books","Book","find in table"],
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "https://repo4.mydevil.net/git/priv/dipson/CMS/"
+    "url": "https://github.com/onelifecreative/jsbookstore"
   },
-  "author": "onelife.co Independent WebDeveloper Collective",
-  "license": "ISC",
-  "dependencies": {
-    "dist": "^0.1.2",
-    "dragula": "^3.0.3",
-    "mustache": "^2.2.0"
-  }
+  "license": "MIT"
 }
